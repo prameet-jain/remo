@@ -23,5 +23,8 @@ except ImportError:
 
 manage.setup_environ(__file__, more_pythonic=True)
 
+import djcelery
+djcelery.setup_loader()
+
 if __name__ == "__main__":
     manage.main()
